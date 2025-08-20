@@ -1,149 +1,154 @@
-[gd_scene load_steps=17 format=3 uid="uid://dmm7rr8rxxalx"]
+[gd_scene load_steps=18 format=3 uid="uid://d08g4blb1kwqd"]
 
-[ext_resource type="Texture2D" uid="uid://bsb4igxt75k43" path="res://Assets/Material Freeway/Material Freeway/carros/coches (1).png" id="1_tnc5m"]
-[ext_resource type="Texture2D" uid="uid://d2ot4nknl3tj8" path="res://Assets/Material Freeway/Material Freeway/carros/coches (10).png" id="2_bwgvs"]
-[ext_resource type="Texture2D" uid="uid://k0ggvowln3wb" path="res://Assets/Material Freeway/Material Freeway/carros/coches (11).png" id="3_tr1v5"]
-[ext_resource type="Texture2D" uid="uid://d1l7arscuh6n5" path="res://Assets/Material Freeway/Material Freeway/carros/coches (12).png" id="4_pw8u7"]
-[ext_resource type="Texture2D" uid="uid://rn62k40krjbv" path="res://Assets/Material Freeway/Material Freeway/carros/coches (13).png" id="5_62f5d"]
-[ext_resource type="Texture2D" uid="uid://dn0inuoe3jo4v" path="res://Assets/Material Freeway/Material Freeway/carros/coches (14).png" id="6_j1obl"]
-[ext_resource type="Texture2D" uid="uid://rg1qmxl14k3m" path="res://Assets/Material Freeway/Material Freeway/carros/coches (2).png" id="7_bf6hf"]
-[ext_resource type="Texture2D" uid="uid://dl8p5ycqydalp" path="res://Assets/Material Freeway/Material Freeway/carros/coches (3).png" id="8_18rmm"]
-[ext_resource type="Texture2D" uid="uid://csgjgukvde8xi" path="res://Assets/Material Freeway/Material Freeway/carros/coches (4).png" id="9_7wsee"]
-[ext_resource type="Texture2D" uid="uid://c4j3np0q0v1ww" path="res://Assets/Material Freeway/Material Freeway/carros/coches (5).png" id="10_6m11h"]
-[ext_resource type="Texture2D" uid="uid://dyujvke5a5yvt" path="res://Assets/Material Freeway/Material Freeway/carros/coches (6).png" id="11_asjcy"]
-[ext_resource type="Texture2D" uid="uid://dl6t1iovb6l4i" path="res://Assets/Material Freeway/Material Freeway/carros/coches (7).png" id="12_xio2t"]
-[ext_resource type="Texture2D" uid="uid://c0eheg3a2v41a" path="res://Assets/Material Freeway/Material Freeway/carros/coches (8).png" id="13_cfxhq"]
-[ext_resource type="Texture2D" uid="uid://bncbqtroxj6on" path="res://Assets/Material Freeway/Material Freeway/carros/coches (9).png" id="14_w6uih"]
+[ext_resource type="Script" uid="uid://p0o1tr2qo63f" path="res://cars.gd" id="1_31rh5"]
+[ext_resource type="Texture2D" uid="uid://bsb4igxt75k43" path="res://Assets/Material Freeway/Material Freeway/carros/coches (1).png" id="1_dtlon"]
+[ext_resource type="Texture2D" uid="uid://d2ot4nknl3tj8" path="res://Assets/Material Freeway/Material Freeway/carros/coches (10).png" id="2_31rh5"]
+[ext_resource type="Texture2D" uid="uid://k0ggvowln3wb" path="res://Assets/Material Freeway/Material Freeway/carros/coches (11).png" id="3_cjvsn"]
+[ext_resource type="Texture2D" uid="uid://d1l7arscuh6n5" path="res://Assets/Material Freeway/Material Freeway/carros/coches (12).png" id="4_easw5"]
+[ext_resource type="Texture2D" uid="uid://rn62k40krjbv" path="res://Assets/Material Freeway/Material Freeway/carros/coches (13).png" id="5_7qyvl"]
+[ext_resource type="Texture2D" uid="uid://dn0inuoe3jo4v" path="res://Assets/Material Freeway/Material Freeway/carros/coches (14).png" id="6_nygyp"]
+[ext_resource type="Texture2D" uid="uid://rg1qmxl14k3m" path="res://Assets/Material Freeway/Material Freeway/carros/coches (2).png" id="7_a2qtg"]
+[ext_resource type="Texture2D" uid="uid://dl8p5ycqydalp" path="res://Assets/Material Freeway/Material Freeway/carros/coches (3).png" id="8_heol4"]
+[ext_resource type="Texture2D" uid="uid://csgjgukvde8xi" path="res://Assets/Material Freeway/Material Freeway/carros/coches (4).png" id="9_rq650"]
+[ext_resource type="Texture2D" uid="uid://c4j3np0q0v1ww" path="res://Assets/Material Freeway/Material Freeway/carros/coches (5).png" id="10_pc8pf"]
+[ext_resource type="Texture2D" uid="uid://dyujvke5a5yvt" path="res://Assets/Material Freeway/Material Freeway/carros/coches (6).png" id="11_nq5ag"]
+[ext_resource type="Texture2D" uid="uid://dl6t1iovb6l4i" path="res://Assets/Material Freeway/Material Freeway/carros/coches (7).png" id="12_17081"]
+[ext_resource type="Texture2D" uid="uid://c0eheg3a2v41a" path="res://Assets/Material Freeway/Material Freeway/carros/coches (8).png" id="13_1qhv6"]
+[ext_resource type="Texture2D" uid="uid://bncbqtroxj6on" path="res://Assets/Material Freeway/Material Freeway/carros/coches (9).png" id="14_ftalb"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_yu2o2"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_un43r"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_tnc5m")
+"texture": ExtResource("1_dtlon")
 }],
 "loop": true,
-"name": &"Carro1",
+"name": &"Car1",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_bwgvs")
+"texture": ExtResource("2_31rh5")
 }],
 "loop": true,
-"name": &"Carro10",
+"name": &"Car110",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_tr1v5")
+"texture": ExtResource("3_cjvsn")
 }],
 "loop": true,
-"name": &"Carro11",
+"name": &"Car111",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_pw8u7")
+"texture": ExtResource("4_easw5")
 }],
 "loop": true,
-"name": &"Carro12",
+"name": &"Car112",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_62f5d")
+"texture": ExtResource("5_7qyvl")
 }],
 "loop": true,
-"name": &"Carro13",
+"name": &"Car113",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_j1obl")
+"texture": ExtResource("6_nygyp")
 }],
 "loop": true,
-"name": &"Carro14",
+"name": &"Car114",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_bf6hf")
+"texture": ExtResource("7_a2qtg")
 }],
 "loop": true,
-"name": &"Carro2",
+"name": &"Car12",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_18rmm")
+"texture": ExtResource("8_heol4")
 }],
 "loop": true,
-"name": &"Carro3",
+"name": &"Car13",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_7wsee")
+"texture": ExtResource("9_rq650")
 }],
 "loop": true,
-"name": &"Carro4",
+"name": &"Car14",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_6m11h")
+"texture": ExtResource("10_pc8pf")
 }],
 "loop": true,
-"name": &"Carro5",
+"name": &"Car15",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_asjcy")
+"texture": ExtResource("11_nq5ag")
 }],
 "loop": true,
-"name": &"Carro6",
+"name": &"Car16",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_xio2t")
+"texture": ExtResource("12_17081")
 }],
 "loop": true,
-"name": &"Carro7",
+"name": &"Car17",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_cfxhq")
+"texture": ExtResource("13_1qhv6")
 }],
 "loop": true,
-"name": &"Carro8",
+"name": &"Car18",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_w6uih")
+"texture": ExtResource("14_ftalb")
 }],
 "loop": true,
-"name": &"Carro9",
+"name": &"Car19",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dknwg"]
-size = Vector2(74, 49)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wqetx"]
+size = Vector2(243, 169)
 
-[node name="Cars" type="RigidBody2D"]
-gravity_scale = 0.0
+[node name="Cars" type="CharacterBody2D"]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_31rh5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 rotation = 1.5708
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_yu2o2")
-animation = &"Carro14"
+sprite_frames = SubResource("SpriteFrames_un43r")
+animation = &"Car1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_dknwg")
+position = Vector2(0.5, -1.5)
+shape = SubResource("RectangleShape2D_wqetx")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-1.66668, -2.14577e-06)
+scale = Vector2(10.5, 6.66667)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
