@@ -1,9 +1,10 @@
 extends Area2D
+
 signal pontua
 
 @export var speed: float = 100.0
 var screenSize: Vector2
-var initialPosition: Vector2 = Vector2(640,690)
+var initialPosition: Vector2 = Vector2(595,627)
 
 func _ready() -> void:
 	screenSize = get_viewport_rect().size
@@ -16,7 +17,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("ui_up"):
 		velocity.y -= 1
 	if Input.is_action_pressed("ui_down"):
-		velocity.y += 1  # Correção: usar += em componente Y
+		velocity.y += 1  
 	
 	# Entrada horizontal
 	if Input.is_action_pressed("ui_left"):
@@ -40,7 +41,7 @@ func _process(delta: float) -> void:
 	elif velocity.y < 0:
 		$AnimatedSprite2D.play("Up")
 	else:
-		$AnimatedSprite2D.stop()  # Corrigido: adicionar parênteses
+		$AnimatedSprite2D.play("Idle")  
 
 func _on_body_entered(body):
 	if body.name == "FinishLine":
