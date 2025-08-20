@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://ge2iign8v2ob"]
+
+[ext_resource type="FontFile" uid="uid://ciukqiw7rr020" path="res://Assets/Material Freeway/Material Freeway/PressStart2P-Regular.ttf" id="1_e0onf"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Score" type="Label" parent="."]
+offset_left = -96.0
+offset_top = -23.0
+offset_right = 4.0
+offset_bottom = 37.0
+scale = Vector2(3, 3)
+theme_override_fonts/font = ExtResource("1_e0onf")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Message" type="Label" parent="."]
+offset_left = 221.0
+offset_top = 201.0
+offset_right = 573.0
+offset_bottom = 280.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("1_e0onf")
+text = "Parabens voce venceuuu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 341.0
+offset_top = 454.0
+offset_right = 493.0
+offset_bottom = 479.0
+scale = Vector2(3, 3)
+theme_override_fonts/font = ExtResource("1_e0onf")
+text = "Reiniciar"

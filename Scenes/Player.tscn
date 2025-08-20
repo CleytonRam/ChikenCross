@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://qn4y48a8po3p"]
 
-[ext_resource type="Script" uid="uid://htvf2qo1kbop" path="res://Player/player.gd" id="1_dtqjt"]
+[ext_resource type="Script" uid="uid://htvf2qo1kbop" path="res://Scripts/player.gd" id="1_dtqjt"]
 [ext_resource type="Texture2D" uid="uid://c4u8cwmtoqtw0" path="res://Assets/Material Freeway/Material Freeway/galinha/baixo/sprite_0.png" id="1_tdg3f"]
 [ext_resource type="Texture2D" uid="uid://cxyx4ykqm65a" path="res://Assets/Material Freeway/Material Freeway/galinha/baixo/sprite_1.png" id="2_dtqjt"]
 [ext_resource type="Texture2D" uid="uid://bsa5f3od8j6on" path="res://Assets/Material Freeway/Material Freeway/galinha/baixo/sprite_2.png" id="3_5ncpa"]

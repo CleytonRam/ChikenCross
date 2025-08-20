@@ -40,7 +40,7 @@ func _process(delta: float) -> void:
 	elif velocity.y < 0:
 		$AnimatedSprite2D.play("Up")
 	else:
-		$AnimatedSprite2D.play("Idle")  
+		$AnimatedSprite2D.play("Iddle")  
 
 func _on_body_entered(body):
 	if body.name == "FinishLine":

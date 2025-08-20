@@ -14,15 +14,15 @@ func _process(delta: float) -> void:
 	var velocity = Vector2.ZERO
 	
 	# Entrada vertical (corrigida)
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("Player2Up"):
 		velocity.y -= 1
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("Player2Down"):
 		velocity.y += 1  
 	
 	# Entrada horizontal
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("Player2Left"):
 		velocity.x -= 1
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("Player2Right"):
 		velocity.x += 1
 	
 	# Aplicar velocidade
@@ -41,7 +41,8 @@ func _process(delta: float) -> void:
 	elif velocity.y < 0:
 		$AnimatedSprite2D.play("Up")
 	else:
-		$AnimatedSprite2D.play("Idle")  
+		$AnimatedSprite2D.play("Iddle")
+	
 
 func _on_body_entered(body):
 	if body.name == "FinishLine":
