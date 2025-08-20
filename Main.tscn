@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvrgsmsf5q6m"]
+
+[ext_resource type="Texture2D" uid="uid://bn3ey0tsro5l6" path="res://Assets/Material Freeway/Material Freeway/wallpaperfreeway.png" id="1_r0du0"]
+[ext_resource type="PackedScene" uid="uid://bxu5p03dd7kd1" path="res://finish_line.tscn" id="2_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://qn4y48a8po3p" path="res://Player.tscn" id="3_fos0i"]
+
+[node name="Node" type="Node"]
+
+[node name="Pista" type="Sprite2D" parent="."]
+position = Vector2(575, 322.5)
+scale = Vector2(0.904687, 0.904167)
+texture = ExtResource("1_r0du0")
+
+[node name="FinishLine" parent="." instance=ExtResource("2_cm0pq")]
+position = Vector2(575, 56)
+scale = Vector2(0.9, 0.9)
+
+[node name="Player" parent="." instance=ExtResource("3_fos0i")]
