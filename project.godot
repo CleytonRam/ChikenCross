@@ -46,3 +46,4 @@ Player2Right={
 2d_physics/layer_1="global"
 2d_physics/layer_2="linhachegada"
 2d_physics/layer_3="jogador"
+2d_physics/layer_4="carros"

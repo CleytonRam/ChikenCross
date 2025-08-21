@@ -8,7 +8,7 @@ func _ready():
 	var carRandom = $AnimatedSprite2D.sprite_frames.get_animation_names()
 	var carColor = carRandom[randi() % carRandom.size()]
 	$AnimatedSprite2D.play(carColor)
-	carSpeedFast()
+	#carSpeedFast()
 
 
 func carSpeedFast():
@@ -16,6 +16,9 @@ func carSpeedFast():
 
 func carSpeedSlow():
 	speed = Vector2(randf_range(300, 350), 0)
+
+func carSpeedCabuloso():
+	speed = Vector2(randf_range(900, 950), 0)
 
 func _physics_process(_delta):
 	velocity = speed

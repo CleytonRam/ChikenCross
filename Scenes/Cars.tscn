@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://k0ggvowln3wb" path="res://Assets/Material Freeway/Material Freeway/carros/coches (11).png" id="3_cjvsn"]
 [ext_resource type="Texture2D" uid="uid://d1l7arscuh6n5" path="res://Assets/Material Freeway/Material Freeway/carros/coches (12).png" id="4_easw5"]
 [ext_resource type="Texture2D" uid="uid://rn62k40krjbv" path="res://Assets/Material Freeway/Material Freeway/carros/coches (13).png" id="5_7qyvl"]
-[ext_resource type="Texture2D" uid="uid://dn0inuoe3jo4v" path="res://Assets/Material Freeway/Material Freeway/carros/coches (14).png" id="6_nygyp"]
 [ext_resource type="Texture2D" uid="uid://rg1qmxl14k3m" path="res://Assets/Material Freeway/Material Freeway/carros/coches (2).png" id="7_a2qtg"]
+[ext_resource type="Texture2D" uid="uid://fbkj06hwa3tp" path="res://Assets/Material Freeway/Material Freeway/carros/coches (14) .png" id="7_y2siw"]
 [ext_resource type="Texture2D" uid="uid://dl8p5ycqydalp" path="res://Assets/Material Freeway/Material Freeway/carros/coches (3).png" id="8_heol4"]
 [ext_resource type="Texture2D" uid="uid://csgjgukvde8xi" path="res://Assets/Material Freeway/Material Freeway/carros/coches (4).png" id="9_rq650"]
 [ext_resource type="Texture2D" uid="uid://c4j3np0q0v1ww" path="res://Assets/Material Freeway/Material Freeway/carros/coches (5).png" id="10_pc8pf"]
@@ -60,7 +60,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_nygyp")
+"texture": ExtResource("7_y2siw")
 }],
 "loop": true,
 "name": &"Car114",
@@ -135,13 +135,15 @@ animations = [{
 size = Vector2(243, 169)
 
 [node name="Cars" type="CharacterBody2D"]
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.2, 0.2)
+collision_layer = 8
+collision_mask = 4
 script = ExtResource("1_31rh5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 rotation = 1.5708
 sprite_frames = SubResource("SpriteFrames_un43r")
-animation = &"Car1"
+animation = &"Car114"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -1.5)

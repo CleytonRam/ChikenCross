@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bcy17rb0pjjt5"
+path="res://.godot/imported/the-legend-of-zelda-ocarina-of-time.wav-1d09f48c0eea02ba5280da662f50ff82.sample"
+
+[deps]
+
+source_file="res://Assets/Material Freeway/Material Freeway/sons/the-legend-of-zelda-ocarina-of-time.wav"
+dest_files=["res://.godot/imported/the-legend-of-zelda-ocarina-of-time.wav-1d09f48c0eea02ba5280da662f50ff82.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
