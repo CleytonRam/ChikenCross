@@ -8,6 +8,7 @@ var initialPosition: Vector2 = Vector2(351,626)
 func _ready() -> void:
 	screenSize = get_viewport_rect().size
 	position = initialPosition
+	
 
 func _process(delta: float) -> void:
 	var velocity = Vector2.ZERO

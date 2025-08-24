@@ -135,7 +135,7 @@ animations = [{
 size = Vector2(243, 169)
 
 [node name="Cars" type="CharacterBody2D"]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.3, 0.3)
 collision_layer = 8
 collision_mask = 4
 script = ExtResource("1_31rh5")
@@ -147,7 +147,6 @@ animation = &"Car14"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -1.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_wqetx")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

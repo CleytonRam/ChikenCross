@@ -6,6 +6,7 @@
 size = Vector2(1281, 19)
 
 [node name="FinishLine" type="Area2D"]
+scale = Vector2(2.08, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_6tsjx")

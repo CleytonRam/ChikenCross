@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bvrgsmsf5q6m"]
+[gd_scene load_steps=11 format=3 uid="uid://bvrgsmsf5q6m"]
 
 [ext_resource type="Texture2D" uid="uid://bn3ey0tsro5l6" path="res://Assets/Material Freeway/Material Freeway/wallpaperfreeway.png" id="1_kln2b"]
 [ext_resource type="Script" uid="uid://bmgnycqorcw48" path="res://Scripts/main.gd" id="1_v1gob"]
@@ -8,28 +8,34 @@
 [ext_resource type="PackedScene" uid="uid://robgymqo2r33" path="res://Scenes/player2.tscn" id="5_pbw6q"]
 [ext_resource type="AudioStream" uid="uid://bcy17rb0pjjt5" path="res://Assets/Material Freeway/Material Freeway/sons/the-legend-of-zelda-ocarina-of-time.wav" id="7_50glp"]
 [ext_resource type="AudioStream" uid="uid://dihtwfqvugfdd" path="res://Assets/Material Freeway/Material Freeway/sons/nice-sound-effect.wav" id="7_jw32o"]
+[ext_resource type="AudioStream" uid="uid://clumnb5ograta" path="res://Assets/Material Freeway/Material Freeway/sons/Victory Sound Effect [TubeRipper.cc].mp3" id="8_bmxlf"]
 [ext_resource type="PackedScene" uid="uid://ge2iign8v2ob" path="res://Scenes/hud.tscn" id="9_vy5pj"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_v1gob")
+pointsToWin = 10
 
 [node name="Pista" type="Sprite2D" parent="."]
-position = Vector2(575, 322.5)
-scale = Vector2(0.904687, 0.904167)
+position = Vector2(957.5, 538)
+scale = Vector2(1.50234, 1.50278)
 texture = ExtResource("1_kln2b")
 script = ExtResource("2_pbw6q")
 
 [node name="FinishLine" parent="." instance=ExtResource("2_rgh2o")]
 position = Vector2(575, 56)
-scale = Vector2(0.9, 0.9)
+scale = Vector2(3.06, 0.9)
 collision_layer = 2
 collision_mask = 4
 
 [node name="Player" parent="." instance=ExtResource("3_pbw6q")]
-position = Vector2(272, 608)
+position = Vector2(628, 987)
+scale = Vector2(0.5, 0.5)
+speed = 200.0
 
 [node name="Player2" parent="." instance=ExtResource("5_pbw6q")]
-position = Vector2(840, 612)
+position = Vector2(1243, 988)
+scale = Vector2(0.5, 0.5)
+speed = 200.0
 
 [node name="SlowCars" type="Timer" parent="."]
 wait_time = 0.5
@@ -46,6 +52,7 @@ autostart = true
 stream = ExtResource("7_50glp")
 
 [node name="AudioVictory" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_bmxlf")
 
 [node name="AudioPoint" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_jw32o")

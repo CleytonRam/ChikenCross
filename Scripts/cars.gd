@@ -8,6 +8,7 @@ func _ready():
 	var carRandom = $AnimatedSprite2D.sprite_frames.get_animation_names()
 	var carColor = carRandom[randi() % carRandom.size()]
 	$AnimatedSprite2D.play(carColor)
+	process_mode = Node.PROCESS_MODE_PAUSABLE
 	#carSpeedFast()
 
 
