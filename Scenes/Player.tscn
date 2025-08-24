@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://da7koisjsiky1" path="res://Assets/Material Freeway/Material Freeway/galinha/cima/sprite_1.png" id="5_hp6x6"]
 [ext_resource type="Texture2D" uid="uid://dlkf83on0pnbf" path="res://Assets/Material Freeway/Material Freeway/galinha/baixo/sprite_4.png" id="5_j23h2"]
 [ext_resource type="Texture2D" uid="uid://dv7cx8jwo56up" path="res://Assets/Material Freeway/Material Freeway/galinha/cima/sprite_2.png" id="6_3tkgg"]
-[ext_resource type="AudioStream" uid="uid://cxblxxvd0ae8p" path="res://Assets/Material Freeway/Material Freeway/sons/colide.wav" id="8_5ncpa"]
+[ext_resource type="AudioStream" uid="uid://bhpwuoqfym28w" path="res://Assets/Material Freeway/Material Freeway/sons/httpswwwyoutubecomwatchvqd4s1xmzpiu.wav" id="9_megsn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l6ohk"]
 animations = [{
@@ -73,7 +73,7 @@ animation = &"Iddle"
 frame_progress = 0.893881
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_5ncpa")
+stream = ExtResource("9_megsn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 13.3333)

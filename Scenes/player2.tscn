@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bkevef7buhpj0" path="res://Assets/Material Freeway/Material Freeway/galinha/cima/sprite_0.png" id="5_xrga1"]
 [ext_resource type="Texture2D" uid="uid://da7koisjsiky1" path="res://Assets/Material Freeway/Material Freeway/galinha/cima/sprite_1.png" id="6_o6vle"]
 [ext_resource type="Texture2D" uid="uid://dv7cx8jwo56up" path="res://Assets/Material Freeway/Material Freeway/galinha/cima/sprite_2.png" id="7_nqlr8"]
-[ext_resource type="AudioStream" uid="uid://cxblxxvd0ae8p" path="res://Assets/Material Freeway/Material Freeway/sons/colide.wav" id="8_o6vle"]
+[ext_resource type="AudioStream" uid="uid://bhpwuoqfym28w" path="res://Assets/Material Freeway/Material Freeway/sons/httpswwwyoutubecomwatchvqd4s1xmzpiu.wav" id="8_o6vle"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uqwy3"]
 animations = [{

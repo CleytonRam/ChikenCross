@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-var speed = Vector2.ZERO
-var acceleration = Vector2.ZERO
+@export var speed = Vector2.ZERO
+@export var acceleration = Vector2.ZERO
 
 func _ready():
 	randomize()

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FreeWay"
-run/main_scene="uid://bvrgsmsf5q6m"
+run/main_scene="uid://dvn85amjerqbm"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

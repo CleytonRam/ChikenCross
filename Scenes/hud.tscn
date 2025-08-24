@@ -1,36 +1,96 @@
-[gd_scene load_steps=2 format=3 uid="uid://ge2iign8v2ob"]
+[gd_scene load_steps=3 format=3 uid="uid://ge2iign8v2ob"]
 
 [ext_resource type="FontFile" uid="uid://ciukqiw7rr020" path="res://Assets/Material Freeway/Material Freeway/PressStart2P-Regular.ttf" id="1_e0onf"]
+[ext_resource type="Script" uid="uid://bxumk17jexfut" path="res://Scripts/hud.gd" id="1_fccik"]
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_fccik")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 1173.0
+offset_bottom = 663.0
+color = Color(0, 0, 0, 0.678431)
 
 [node name="Score" type="Label" parent="."]
-offset_left = -96.0
-offset_top = -23.0
-offset_right = 4.0
-offset_bottom = 37.0
-scale = Vector2(3, 3)
+visible = false
+offset_left = -70.0
+offset_top = -35.0
+offset_right = 30.0
+offset_bottom = 25.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0.861935, 0.0813746, 0.519141, 1)
+theme_override_colors/font_shadow_color = Color(0.257792, 0.0032086, 0.139101, 1)
+theme_override_colors/font_outline_color = Color(0.982378, 0.282257, 0.625129, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Score2" type="Label" parent="."]
+visible = false
+offset_left = 1025.0
+offset_top = -35.0
+offset_right = 1125.0
+offset_bottom = 25.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0, 0.998981, 0, 1)
+theme_override_colors/font_shadow_color = Color(1.86507e-07, 0.174474, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_e0onf")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Press2P" type="Label" parent="."]
+visible = false
+offset_left = 829.0
+offset_right = 1053.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(0, 0.998981, 0, 1)
+theme_override_colors/font_shadow_color = Color(1.86507e-07, 0.174474, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_e0onf")
+text = "PRESS ENTER TO PLAY "
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Message" type="Label" parent="."]
+visible = false
 offset_left = 221.0
 offset_top = 201.0
 offset_right = 573.0
 offset_bottom = 280.0
 scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0.98302, 0.619214, 0.279809, 1)
+theme_override_colors/font_shadow_color = Color(0.366382, 0.196515, 0.00959376, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
-text = "Parabens voce venceuuu"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Button" type="Button" parent="."]
+visible = false
 offset_left = 341.0
 offset_top = 454.0
 offset_right = 493.0
 offset_bottom = 479.0
 scale = Vector2(3, 3)
+theme_override_colors/font_color = Color(0.746585, 9.3855e-07, 4.81307e-07, 1)
 theme_override_fonts/font = ExtResource("1_e0onf")
 text = "Reiniciar"
+
+[node name="ButtonMenu" type="Button" parent="."]
+visible = false
+offset_left = 342.0
+offset_top = 547.0
+offset_right = 494.0
+offset_bottom = 571.0
+scale = Vector2(3, 3)
+theme_override_colors/font_color = Color(0.941344, 0.56477, 0, 1)
+theme_override_fonts/font = ExtResource("1_e0onf")
+text = "Menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ButtonMenu" to="." method="_on_button_menu_pressed"]

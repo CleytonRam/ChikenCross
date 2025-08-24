@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cs05u5qob1n6d"
+path="res://.godot/imported/Chug Jug With You - Parody of American Boy (Number One Victory Royale) [TubeRipper (mp3cut.net).mp3-f4c01b93464d6e77077e0796cc2fe214.mp3str"
+
+[deps]
+
+source_file="res://Assets/Material Freeway/Material Freeway/sons/Chug Jug With You - Parody of American Boy (Number One Victory Royale) [TubeRipper (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Chug Jug With You - Parody of American Boy (Number One Victory Royale) [TubeRipper (mp3cut.net).mp3-f4c01b93464d6e77077e0796cc2fe214.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

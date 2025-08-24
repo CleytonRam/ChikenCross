@@ -42,6 +42,10 @@ func _process(delta: float) -> void:
 	else:
 		$AnimatedSprite2D.play("Iddle")  
 
+func bateu():
+	$AudioStreamPlayer2D.play()
+	
+
 func _on_body_entered(body):
 	if body.name == "FinishLine":
 		emit_signal("pontua")
