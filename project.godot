@@ -15,10 +15,17 @@ run/main_scene="uid://dvn85amjerqbm"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ResolutionManager="*res://Scripts/ResolutionManager.gd"
+
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
 
 [input]
 

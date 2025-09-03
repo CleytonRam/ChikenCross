@@ -14,6 +14,10 @@ const fastTrack = [156.0, 411.0, 646.0, 734.0]
 const slowTrack = [245.0, 323.0, 492.0, 816.0]
 const cabulosoTrack = [580.0, 910.0]
 
+const fastTrackDirection = [1, 1, -1, -1]  # Direção para cada pista em fastTrack
+const slowTrackDirection = [1, -1, 1, -1]   # Direção para cada pista em slowTrack
+const cabulosoTrackDirection = [-1, 1]     # Direção para cada pista em cabulosoTrack
+
 
 
 var playerPosition = Vector2(628.0, 987.0)
@@ -87,28 +91,71 @@ func playRandomPitch():
 
 func _on_fast_cars_timeout() -> void:
 	var car = CarScene.instantiate()
+	var index = randi() % fastTrack.size()
+	car.direction = fastTrackDirection[index]  # Define a direção primeiro
 	add_child(car)
-	car.position.x = -10
-	car.position.y = fastTrack[randi() % fastTrack.size()]
-	car.carSpeedFast()
+	var base_y = fastTrack[index]
+	var scaled_y = ResolutionManager.getScaledPosition(Vector2(0, base_y)).y
+	car.position.y = scaled_y
+	car.direction = fastTrackDirection[index]
+
+	var viewport_size = get_viewport().get_visible_rect().size
+	if car.direction == 1:
+		car.position.x = -10
+	else:
+		car.position.x = viewport_size.x + 10
+	
+	
+	# Chama a função de velocidade DEPOIS de definir a direção
+	if car.direction == 1:
+		car.carSpeedFast()
+	else:
+		car.carSpeedFast()  # Já leva em conta a direção
 
 
 func _on_slow_cars_timeout() -> void:
 	var car = CarScene.instantiate()
+	var index = randi() % slowTrack.size()
+	car.direction = slowTrackDirection[index]  # Define a direção primeiro
+
 	add_child(car)
-	car.position.x = -10
-	car.position.y = slowTrack[randi() % slowTrack.size()]
-	car.carSpeedSlow()
+	var base_y = slowTrack[index]
+	var scaled_y = ResolutionManager.getScaledPosition(Vector2(0, base_y)).y
+	car.position.y = scaled_y
+	car.direction = slowTrackDirection[index]
+
+	var viewport_size = get_viewport().get_visible_rect().size 
+	if car.direction == 1:
+		car.position.x = -10
+	else:
+		car.position.x = viewport_size.x + 10
+
+	if car.direction == 1:
+		car.carSpeedSlow()
+	else:
+		car.carSpeedSlow()  # Já leva em conta a direção
 
 func _on_cabuloso_timer_timeout() -> void:
 	var car = CarScene.instantiate()
-	print("Cabuloso car is on the game")
+	var index = randi() % cabulosoTrack.size()
+	car.direction = cabulosoTrackDirection[index]  # Define a direção primeiro
 	add_child(car)
-	car.position.x = -10
-	car.position.y = cabulosoTrack[randi() % cabulosoTrack.size()]
-	car.carSpeedCabuloso()
+	var base_y = cabulosoTrack[index]
+	var scaled_y = ResolutionManager.getScaledPosition(Vector2(0, base_y)).y
+	car.position.y = scaled_y
+	car.direction = cabulosoTrackDirection[index]
 
+	var viewport_size = get_viewport().get_visible_rect().size
+	if car.direction == 1:
+		car.position.x = -10
+	else:
+		car.position.x = viewport_size.x + 10
 
+	# Chama a função de velocidade DEPOIS de definir a direção
+	if car.direction == 1:
+		car.carSpeedCabuloso()
+	else:
+		car.carSpeedCabuloso()  # Já leva em conta a direção
 
 func _on_player_body_entered(body:Node2D) -> void:
 	$Player.bateu()
